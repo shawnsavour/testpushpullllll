@@ -1,0 +1,17 @@
+name: Sample Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Add your build and test steps here
+
+      - name: Deploy
+        run: echo "Deploying..."
